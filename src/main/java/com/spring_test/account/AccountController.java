@@ -9,6 +9,7 @@ public class AccountController {
 
     @GetMapping("/sign-up")                 // sign-up 요청이 들어오면
     public String signUpForm(Model model){
+        model.addAttribute(new signUpForm());
         return "account/sign-up";              // account/sign-up에 있는 html을 반환
     }
 
